@@ -12,11 +12,13 @@
       padding:0 15px;
     }
   
+    @media @phone {
+      img {
+        width: 100%;
+      }
+    }
   }
 
-  .main-image {
-    margin-left: 400px;
-  }
 
   .space-images {
     display: flex;
@@ -28,6 +30,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      img{
+       
+       width: 100%;
+       
+       &:nth-child(2) {
+         display: none;
+       }
+       &:nth-child(3) {
+         display: none;
+       }
+      }
+      
     }
   }
 
@@ -62,6 +79,10 @@
       }
 
       .btn {
+        
+        button {
+          .custom-btn();
+        }
       }
     }
 
@@ -74,6 +95,20 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      
+      .walk-img {
+        width: 100%;
+      }
+
+      p {
+        width: 400px;
+      }
+      
     }
   }
 }// home

@@ -1,7 +1,7 @@
 // Mixins Here
 .custom-nav(){
     background: @wild-sand;
-    border: 1px solid black;
+    border: 1px solid @nav-border;
     text-align: center;
     font-size: 2rem;
     padding: 10px 0 20px 0;
@@ -12,4 +12,11 @@
     margin: 0 20px;
     color: @river-bend;
     padding-bottom: 10px;
+}
+
+.custom-btn(@background-color: #22283A, @font-color: #F6F7F8) {
+    background: @background-color;
+    color: @font-color;
+    padding: 6px 20px;
+    border-radius: 7px;
 }
