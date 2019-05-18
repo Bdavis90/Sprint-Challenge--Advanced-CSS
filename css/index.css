@@ -178,6 +178,11 @@ p {
   padding-bottom: 10px;
 }
 @media (max-width: 500px) {
+  .top-nav {
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+  }
   .top-nav h1 {
     font-size: 4rem;
   }
@@ -204,6 +209,7 @@ footer {
 @media (max-width: 500px) {
   .home .intro img {
     width: 100%;
+    margin-top: 122px;
   }
 }
 .home .space-images {
@@ -244,6 +250,14 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    padding: 0;
+  }
+  .home .walk .walk-text {
+    margin-left: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -258,6 +272,17 @@ footer {
   color: #F6F7F8;
   padding: 6px 20px;
   border-radius: 7px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn button:hover {
+  background: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    padding: 16px 200px;
+    margin-bottom: 20px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -273,10 +298,15 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+  .home .walk h3 {
+    width: 500px;
+    padding-top: 20px;
+  }
   .home .walk .walk-img {
-    width: 100%;
+    width: 93%;
+    padding-top: 20px;
   }
   .home .walk p {
-    width: 400px;
+    width: 450px;
   }
 }
